@@ -21,3 +21,6 @@ Para iniciar el proyecto vamos crearnos una cuenta en github. A continuacion la 
 # Listado de participantes:
 
 - Lautaro, Nola, lautaronola
+- Hector de la Fuente, delafuentehector
+- Daniel Guzman, dguzman-ort.
+- Ezequiel Grynberg
