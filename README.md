@@ -21,4 +21,7 @@ Para iniciar el proyecto vamos crearnos una cuenta en github. A continuacion la 
 
 # Listado de participantes:
 
--Zakiel Gimenez, zakiel-go.
+- Hector de la Fuente, delafuentehector
+- Daniel Guzman, dguzman-ort.
+- Ezequiel Grynberg
+- Zakiel Gimenez, zakiel-go. 
