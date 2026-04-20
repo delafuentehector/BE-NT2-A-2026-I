@@ -7,3 +7,15 @@
  * si puede entrar o no en un casino
  */
 
+import {personas, EDAD_MINIMA} from "./personas.js";
+
+
+function generarPermisoEntrada(personas){
+    return personas.map(persona => {
+    return {
+        ...persona,
+        allowed: persona.age >= EDAD_MINIMA
+        };
+    });
+}
+console.table(generarPermisoEntrada(personas))

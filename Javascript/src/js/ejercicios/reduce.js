@@ -14,3 +14,38 @@
  * }
  * 
  */
+import {personas, EDAD_MINIMA} from "./personas.js";
+
+function ordenarPorNombre(personas){
+    return personas.map(
+        persona => {
+            return(
+                {
+                    nombreCompleto: `${persona.firstName}, ${persona.lastName}`,
+                    edad: persona.age
+                }
+            )
+        }
+    )
+}
+
+function listarContactosPorLetra(personas){
+    console.log(personas.sort((a, b) => a.nombreCompleto.localeCompare(b.nombreCompleto)));
+}
+
+const ordenados = ordenarPorNombre(personas);
+
+function agruparPorLetra(personas){
+    return personas.reduce((agrupados, persona) => {
+            let letra = persona.nombreCompleto[0];
+            if(!agrupados[letra]){
+                agrupados[letra] = [];
+            }
+            agrupados[letra].push(persona)
+            
+            return agrupados;
+        }
+    , {})
+}
+
+console.log(agruparPorLetra(ordenados));
